@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
+# 2019/1/11 0011 上午 10:16
 
-# 2019/1/11 0011 上午 10:16     
-# RollingBear
+__author__ = 'RollingBear'
 
 import os
 import sys
