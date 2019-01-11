@@ -4,13 +4,11 @@
 
 __author__ = 'RollingBear'
 
-
 import os
 import configparser
 
 
 class Dictionary(dict):
-
     '''把 config.ini中的参数添加到dict'''
 
     def __getattr__(self, keyname):
@@ -19,7 +17,6 @@ class Dictionary(dict):
 
 
 class Config(object):
-
     '''ConfigParser二次封装， 在字典中获取value'''
 
     def __init__(self):
@@ -35,7 +32,6 @@ class Config(object):
             setattr(self, section, Dictionary())
             for keyname, value in self.config.items(section):
                 setattr(getattr(self, section), keyname, value)
-
 
     def getconf(self, section):
         if section in self.config.sections():
